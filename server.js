@@ -6,10 +6,11 @@ const app = require('./app')
 
 //console.log(process.env);
 
-const {DB_HOST} = process.env;
+const {DB_HOST, PORT = 3000} = process.env;
+//console.log("DB_HOST : ", process.env.DB_HOST);
 
 mongoose.connect(DB_HOST)
-    .then(() => app.listen(3000))
+    .then(() => app.listen(PORT))
     .catch(error => {
       console.log(error.message);
       process.exit(1);
