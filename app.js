@@ -5,7 +5,6 @@ const cors = require('cors')
 require("dotenv").config()
 
 const booksRouter = require("./routes/api/books.js");
-const contactsRouter = require('./routes/api/contacts')
 
 //dotenv.config();
 
@@ -18,7 +17,6 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/api/books", booksRouter);
-app.use('/api/contacts', contactsRouter)
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not found' })
