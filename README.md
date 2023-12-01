@@ -10,18 +10,18 @@ POST https://books-reader-backend-197l.onrender.com/api/books
     "genre": "fantastic",   
     "date": "30-11-2023"  
 }  
-https://books-reader-backend-197l.onrender.com/api/books/:id  
+PUT https://books-reader-backend-197l.onrender.com/api/books/:id  
 {  
     "title": "Name book - MongoDB - 2 -PUT",  
     "author": "Author",  
     "genre": "fantastic",  
     "date": "30-11-2023"  
 }  
-https://books-reader-backend-197l.onrender.com/api/books/:id/favorite  
+PATCH https://books-reader-backend-197l.onrender.com/api/books/:id/favorite  
 {  
     "favorite": true  
 }  
-https://books-reader-backend-197l.onrender.com/api/books/:id  
+DELETE https://books-reader-backend-197l.onrender.com/api/books/:id  
 
 
 ###
